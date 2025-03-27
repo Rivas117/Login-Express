@@ -1,0 +1,31 @@
+{
+  "name": "login-express",
+  "version": "1.0.0",
+  "main": "app/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon --exec node app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rivas117/Login-Express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rivas117/Login-Express/issues"
+  },
+  "homepage": "https://github.com/Rivas117/Login-Express#readme",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
