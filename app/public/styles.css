@@ -1,68 +1,76 @@
-html{
-    background-color: #2294b4;
-}
+/*
+  Este archivo se encarga del diseño visual (colores, tamaños, márgenes, etc.) del sitio.
+  A continuación, se explica línea por línea qué hace cada bloque.
+*/
 
-body{
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100svh;
-    font-size: larger;
-}
-
-.form-container{
-    width: 500px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 50px;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-form+p,form p{
-    text-align: center;
-}
-
-input,button{
-    border-radius: 4px;
-    border: unset;
-    padding: 15px 30px;
-    font-size: larger;
-}
-
-button{
-    background-color: #2294b4;
-    color: #c8e0e4;
-    transition: 500ms;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.error{
-    color: rgb(255, 81, 81);
-}
-
-.escondido{
-    display: none;
-}
-
-button:hover{
-    background-color: #22a0b4;
-    transition: 500ms;
-    color: white;
-}
-
-.sr-only{
-    position: absolute;
-    left: -10000px;
+html {
+    background-color: #2294b4; /* Color de fondo para toda la página (celeste intenso) */
+  }
+  
+  body {
+    margin: 0; /* Quitamos márgenes por defecto */
+    font-family: 'Times New Roman', Times, serif; /* Tipo de letra clásico */
+    display: flex; /* Usamos flexbox para centrar */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    min-height: 100svh; /* Altura mínima igual al 100% de la pantalla */
+    font-size: larger; /* Letra más grande que la normal */
+  }
+  
+  .form-container {
+    width: 500px; /* Ancho fijo del formulario */
+    background-color: white; /* Fondo blanco para destacar sobre el fondo azul */
+    border-radius: 10px; /* Bordes redondeados suaves */
+    padding: 50px; /* Espacio interno (padding) amplio */
+  }
+  
+  form {
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Los elementos se acomodan en columna */
+    gap: 10px; /* Espacio entre cada campo del formulario */
+  }
+  
+  form + p,
+  form p {
+    text-align: center; /* Centramos el texto de los párrafos relacionados con el formulario */
+  }
+  
+  input,
+  button {
+    border-radius: 4px; /* Bordes suavemente redondeados */
+    border: unset; /* Quitamos los bordes normales */
+    padding: 15px 30px; /* Espaciado interno para hacerlo más cómodo al tacto */
+    font-size: larger; /* Letra grande para accesibilidad */
+  }
+  
+  button {
+    background-color: #2294b4; /* Mismo celeste del fondo */
+    color: #c8e0e4; /* Letra clara sobre fondo celeste */
+    transition: 500ms; /* Suavizamos el cambio de color al pasar el mouse */
+    font-weight: bold; /* Letra en negrita */
+    cursor: pointer; /* Cursor cambia a "manito" indicando que es clickeable */
+  }
+  
+  .error {
+    color: rgb(255, 81, 81); /* Color rojo para destacar los errores */
+  }
+  
+  .escondido {
+    display: none; /* Esta clase es usada para ocultar cosas (como el mensaje de error) */
+  }
+  
+  button:hover {
+    background-color: #22a0b4; /* Cambia ligeramente el color del botón al pasar el mouse */
+    transition: 500ms; /* Efecto suave */
+    color: white; /* Cambiamos el color de letra a blanco cuando el botón está activo */
+  }
+  
+  .sr-only {
+    position: absolute; /* Lo sacamos del flujo normal del documento */
+    left: -10000px; /* Lo movemos bien lejos a la izquierda */
     top: auto;
     width: 1px;
     height: 1px;
     overflow: hidden;
-}
+    /* Todo esto se usa para esconder visualmente algo del usuario pero que sea accesible para lectores de pantalla */
+  }
